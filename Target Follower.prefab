@@ -1,0 +1,234 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5315143488399126795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5315143488399126792}
+  m_Layer: 0
+  m_Name: Follower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5315143488399126792
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315143488399126795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5315143489655743421}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5315143489655743420
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5315143489655743421}
+  m_Layer: 0
+  m_Name: Target Follower
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5315143489655743421
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315143489655743420}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 40.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5315143489786879173}
+  - {fileID: 5315143488399126792}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &5315143489786879172
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5315143489786879173}
+  - component: {fileID: 5315143489786879170}
+  m_Layer: 0
+  m_Name: Scripting Runtime
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5315143489786879173
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315143489786879172}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5315143489655743421}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5315143489786879170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5315143489786879172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37c65c4f04796841a3b04c8e7b38536, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ComponentName: 
+  ScriptContents: 
+  Script: {fileID: 11400000, guid: 89d475b2d4d7eca498f6f91ae1063ccd, type: 3}
+  PublicVariables:
+  - Type: 1
+    Name: turnSpeed
+    FloatVal: 1
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: moveSpeed
+    FloatVal: 0.5
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: maxDistance
+    FloatVal: 20
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: targetOffsetX
+    FloatVal: 0
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: targetOffsetY
+    FloatVal: 3
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: targetOffsetZ
+    FloatVal: 3
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 5
+    Name: alwaysFaceTarget
+    FloatVal: 0
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 1
+  - Type: 5
+    Name: movableSource
+    FloatVal: 0
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: teleportPreDelay
+    FloatVal: 0
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: teleportPostDelay
+    FloatVal: 0
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: arriveDistance
+    FloatVal: 0.1
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  - Type: 1
+    Name: aimAngle
+    FloatVal: 3
+    IntVal: 0
+    StringVal: 
+    ObjectRef: {fileID: 0}
+    BoolVal: 0
+  PublicVariablesLocked: 0
+  ScriptFile: {fileID: 0}
+  ScriptLibraries: []
+  ScriptLibraries2: []
+  DefaultEvents: 1
+  ResetBehaviour: 0
+  AllowRuntimeScriptEditing: 0
+  Debugger: 0
+  AwaitDebugger: 0
+  WaitForPlayer: 1
+  WaitForNetwork: 0
+  MaxScriptExecutionsPerTick: 5000
+  Index: 1
+  LoadLibrariesSequentially: 1
+  Resources: []
+  Events:
+  - Name: Moving
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Arrived
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Teleport
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Turning
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+  - Name: Aimed
+    Event:
+      m_PersistentCalls:
+        m_Calls: []
+  ObjectReferences:
+  - Name: Follower
+    Reference: {fileID: 5315143488399126795}
